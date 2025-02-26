@@ -2,9 +2,9 @@
 #include <string>
 #include <ctime>
 #include <iostream>
-// #include <windows.h>
-#include <random>
 #include <array>
+#include <windows.h>
+#include <random>
 
 const char SUBMARINE  = '#';
 const char TREASURE   = '!';
@@ -17,14 +17,17 @@ const int ASCHIIW = 87;
 const int ASCHIIS = 83;
 const int ASCHIID = 68;
 
-const int width = 50;
-const int height = 30;
+const int width = 80;
+const int height = 40;
 
 const int torchsize = 3;
-const int playlight = 1;
+const int PLAYLIGHT = 2;
 const int TORCHCOUNT = 5;
 
 
+int x = width/2;
+int y = height/2;
+    
 void drawOcean(char ocean[height][width]){
     for(int i = 0;i<height;i++){
         std::cout << "\033[F\r";
@@ -38,34 +41,47 @@ void drawOcean(char ocean[height][width]){
     
 
 }
+
 void drawOceanLighted(char ocean[height][width],std::array<int,2> torchmap[],int numtorches){
+    std::string output ="";
     for(int i = 0;i<height;i++){
-        std::cout << "\033[F\r";
+        output += "\033[F\r";
     }
-    for(int i = 0; i<height;(std::cout<<"\r\n")){
+    for(int i = 0; i<height;(output += "\r\n")){
         for(int i2 = 0;i2<width;i2++){
             int light =0;
             for(int i3=0;i3<numtorches;i3++){
                 int distance = (i-torchmap[i3][0])*(i-torchmap[i3][0])+(i2-torchmap[i3][1])*(i2-torchmap[i3][1]);
-                if(distance< (torchsize+1)*(torchsize+1) ){ light++;}//grey
-                if(distance< torchsize*torchsize){ light++;}//bright
-
+                if(distance<= (torchsize+1)*(torchsize+1) ){ light++;}//grey
+                if(distance<= torchsize*torchsize){ light++;}//bright
             }
+	    if((i-y)*(i-y)+(i2-x)*(i2-x)<=PLAYLIGHT*PLAYLIGHT){
+		light ++;	
+	    }
+	    if((i-y)*(i-y)+(i2-x)*(i2-x)<=(PLAYLIGHT+1)*(PLAYLIGHT+1)){
+		light ++;	
+	    }
+
+	    if(i==y && i2 == x){
+		    output +=SUBMARINE;
+	    }else{
             switch(light){
                 case(0):
-                    std::cout<<DARKOCEAN;
+                    output +=  DARKOCEAN;
                     break;
                 case(1):
-                    std::cout<<GRAYEOCEAN;
+                    output +=  GRAYEOCEAN;
                     break;
                 default:                
                     char c = ocean[i][i2];
-                    std::cout<< c;
+                    output += c;
                     break;
             }
+	    }
         }
         i++;
     }
+    std::cout <<output;
 }
 
 //function to place torches. override later
@@ -102,4 +118,25 @@ int main(){
     torchoverride(torchmap,TORCHCOUNT,oceanmap);
     
     drawOceanLighted(oceanmap,torchmap,TORCHCOUNT);
+    while(true){
+	if(GetAsyncKeyState(ASCHIIA) & 0x8000){
+		x--;
+		if(x<0) x = 0;
+	}
+	if(GetAsyncKeyState(ASCHIIW) & 0x8000){
+		y--;
+		if(y<0) y = 0;
+	}
+	if(GetAsyncKeyState(ASCHIID) & 0x8000){
+		x++;
+		if(x>width-1) x = width-1;
+	}
+	if(GetAsyncKeyState(ASCHIIS) & 0x8000){
+		y++;
+		if(y>height-1) y=height-1;
+	}
+   	drawOceanLighted(oceanmap,torchmap,TORCHCOUNT);
+	Sleep(100);
+    }
+
 }
