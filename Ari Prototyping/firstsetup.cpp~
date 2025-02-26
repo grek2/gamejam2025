@@ -9,7 +9,7 @@
 const char SUBMARINE  = '#';
 const char TREASURE   = '!';
 const char DARKOCEAN  = '8';
-const char GRAYEOCEAN  = 'O';
+const char GRAYEOCEAN  = '*';
 const char LIGHTOCEAN = ' ';
 
 const int ASCHIIA = 65;
@@ -17,12 +17,12 @@ const int ASCHIIW = 87;
 const int ASCHIIS = 83;
 const int ASCHIID = 68;
 
-const int width = 20;
-const int height = 20;
+const int width = 50;
+const int height = 30;
 
-const int torchsize = 2;
+const int torchsize = 3;
 const int playlight = 1;
-
+const int TORCHCOUNT = 5;
 
 
 void drawOcean(char ocean[height][width]){
@@ -98,12 +98,8 @@ int main(){
     }
     char oceanmap[height][width];
     genmap(oceanmap);
-    std::array<int,2> torchmap[5];
-    torchoverride(torchmap,5,oceanmap);
+    std::array<int,2> torchmap[TORCHCOUNT];
+    torchoverride(torchmap,TORCHCOUNT,oceanmap);
     
-    drawOceanLighted(oceanmap,torchmap,5);
-    for(int i = 0; i<5;i++){
-    std::cout<<torchmap[i][0]<<","<<torchmap[i][1]<<"\n";
-    }
-
+    drawOceanLighted(oceanmap,torchmap,TORCHCOUNT);
 }

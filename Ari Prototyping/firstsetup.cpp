@@ -9,7 +9,7 @@
 const char SUBMARINE  = '#';
 const char TREASURE   = '!';
 const char DARKOCEAN  = '8';
-const char GRAYEOCEAN  = 'O';
+const char GRAYEOCEAN  = '*';
 const char LIGHTOCEAN = ' ';
 
 const int ASCHIIA = 65;
@@ -17,10 +17,10 @@ const int ASCHIIW = 87;
 const int ASCHIIS = 83;
 const int ASCHIID = 68;
 
-const int width = 20;
-const int height = 20;
+const int width = 80;
+const int height = 40;
 
-const int torchsize = 2;
+const int torchsize = 3;
 const int playlight = 1;
 const int TORCHCOUNT = 5;
 
