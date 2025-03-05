@@ -1,4 +1,4 @@
-
+#include "definitions.h"
 
 int level = 0;
 char levelfilepaths[] = {};
@@ -6,13 +6,6 @@ char levelfilepaths[] = {};
 int playerx;
 int playery;
 
-
-
-struct fish {
-	int x;
-	int y;
-	int light;
-};
 
 int main(){
 	return 0;
