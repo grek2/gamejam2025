@@ -1,0 +1,3 @@
+C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/glad-populate.dir
+C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/ALL_BUILD.dir
+C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/ZERO_CHECK.dir

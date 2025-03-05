@@ -1,0 +1,10 @@
+^C:\PROGRAMING\GAMEJAM2025\ARI PROTOTYPING\GRAPHICAL\BUILD\_DEPS\GLAD-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild" "-BC:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild" --check-stamp-file "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^C:\PROGRAMING\GAMEJAM2025\ARI PROTOTYPING\GRAPHICAL\BUILD\CMAKEFILES\1B34CF75EE274A39882C97D4D86A444E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Programing/gamejam2025/Ari Prototyping/graphical" "-BC:/Programing/gamejam2025/Ari Prototyping/graphical/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/Myproject.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

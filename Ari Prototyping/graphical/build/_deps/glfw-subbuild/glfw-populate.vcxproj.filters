@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-subbuild\CMakeFiles\dfca61a6515b6043b385b6c2612cda72\glfw-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-subbuild\CMakeFiles\dfca61a6515b6043b385b6c2612cda72\glfw-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-subbuild\CMakeFiles\dfca61a6515b6043b385b6c2612cda72\glfw-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-subbuild\CMakeFiles\dfca61a6515b6043b385b6c2612cda72\glfw-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-subbuild\CMakeFiles\dfca61a6515b6043b385b6c2612cda72\glfw-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-subbuild\CMakeFiles\dfca61a6515b6043b385b6c2612cda72\glfw-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-subbuild\CMakeFiles\dfca61a6515b6043b385b6c2612cda72\glfw-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-subbuild\CMakeFiles\dfca61a6515b6043b385b6c2612cda72\glfw-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-subbuild\CMakeFiles\cb31775f25f3b0788ab3d57275f44c1c\glfw-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-subbuild\CMakeFiles\8a2c847a1219838d22054dec97ece277\glfw-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-subbuild\CMakeFiles\glfw-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2677F558-33FC-34F7-87A3-4533FB270E8A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

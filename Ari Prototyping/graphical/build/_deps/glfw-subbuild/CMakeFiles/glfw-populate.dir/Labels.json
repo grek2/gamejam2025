@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glfw-subbuild/CMakeFiles/8a2c847a1219838d22054dec97ece277/glfw-populate.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glfw-subbuild/CMakeFiles/cb31775f25f3b0788ab3d57275f44c1c/glfw-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glfw-subbuild/CMakeFiles/dfca61a6515b6043b385b6c2612cda72/glfw-populate-build.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glfw-subbuild/CMakeFiles/dfca61a6515b6043b385b6c2612cda72/glfw-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glfw-subbuild/CMakeFiles/dfca61a6515b6043b385b6c2612cda72/glfw-populate-download.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glfw-subbuild/CMakeFiles/dfca61a6515b6043b385b6c2612cda72/glfw-populate-install.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glfw-subbuild/CMakeFiles/dfca61a6515b6043b385b6c2612cda72/glfw-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glfw-subbuild/CMakeFiles/dfca61a6515b6043b385b6c2612cda72/glfw-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glfw-subbuild/CMakeFiles/dfca61a6515b6043b385b6c2612cda72/glfw-populate-test.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glfw-subbuild/CMakeFiles/dfca61a6515b6043b385b6c2612cda72/glfw-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glfw-populate"
+		],
+		"name" : "glfw-populate"
+	}
+}

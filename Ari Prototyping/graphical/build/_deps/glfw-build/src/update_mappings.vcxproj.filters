@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\CMakeFiles\5cbc51dedf8c7952849bd9369203b3df\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-src\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-src\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-src\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glfw-build\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E670D099-A9FC-3DE4-B9E4-823422031DCD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{42574E3F-7D55-3685-8D5F-8B8BE236276B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

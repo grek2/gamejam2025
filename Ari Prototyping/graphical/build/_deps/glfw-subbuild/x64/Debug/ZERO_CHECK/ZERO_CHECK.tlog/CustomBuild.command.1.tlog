@@ -1,0 +1,10 @@
+^C:\PROGRAMING\GAMEJAM2025\ARI PROTOTYPING\GRAPHICAL\BUILD\_DEPS\GLFW-SUBBUILD\CMAKEFILES\8A2C847A1219838D22054DEC97ECE277\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glfw-subbuild" "-BC:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glfw-subbuild" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glfw-subbuild/glfw-populate.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

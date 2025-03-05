@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/glad-populate"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/61ef216800d57803587e37411c1eb591/glad-populate.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/aca213a099e8fe4e1848beb67356d8da/glad-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/a7172a7f31cbd86b0f82595a155dab58/glad-populate-build.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/a7172a7f31cbd86b0f82595a155dab58/glad-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/a7172a7f31cbd86b0f82595a155dab58/glad-populate-download.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/a7172a7f31cbd86b0f82595a155dab58/glad-populate-install.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/a7172a7f31cbd86b0f82595a155dab58/glad-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/a7172a7f31cbd86b0f82595a155dab58/glad-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/a7172a7f31cbd86b0f82595a155dab58/glad-populate-test.rule"
+		},
+		{
+			"file" : "C:/Programing/gamejam2025/Ari Prototyping/graphical/build/_deps/glad-subbuild/CMakeFiles/a7172a7f31cbd86b0f82595a155dab58/glad-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glad-populate"
+		],
+		"name" : "glad-populate"
+	}
+}

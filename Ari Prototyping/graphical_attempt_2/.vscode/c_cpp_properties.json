@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}",
+                // "C:/opengl/include/",
+                "C:/include/libs/**",
+                "C:/include/OpenGL/**",
+                "C:/include/OpenGL/glad"
+            ]
+        }
+    ],
+    "version": 4
+}

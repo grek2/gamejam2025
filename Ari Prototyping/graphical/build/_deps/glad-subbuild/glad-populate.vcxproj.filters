@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-subbuild\CMakeFiles\a7172a7f31cbd86b0f82595a155dab58\glad-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-subbuild\CMakeFiles\a7172a7f31cbd86b0f82595a155dab58\glad-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-subbuild\CMakeFiles\a7172a7f31cbd86b0f82595a155dab58\glad-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-subbuild\CMakeFiles\a7172a7f31cbd86b0f82595a155dab58\glad-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-subbuild\CMakeFiles\a7172a7f31cbd86b0f82595a155dab58\glad-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-subbuild\CMakeFiles\a7172a7f31cbd86b0f82595a155dab58\glad-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-subbuild\CMakeFiles\a7172a7f31cbd86b0f82595a155dab58\glad-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-subbuild\CMakeFiles\a7172a7f31cbd86b0f82595a155dab58\glad-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-subbuild\CMakeFiles\aca213a099e8fe4e1848beb67356d8da\glad-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-subbuild\CMakeFiles\61ef216800d57803587e37411c1eb591\glad-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-subbuild\CMakeFiles\glad-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AD0D592F-801E-3ADE-84E8-4D7ED087ED40}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-src\src\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-src\include\KHR\khrplatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-src\include\glad\glad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Programing\gamejam2025\Ari Prototyping\graphical\build\_deps\glad-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{42574E3F-7D55-3685-8D5F-8B8BE236276B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3BCC73D4-06C1-3325-A084-2543B1F05CD2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
