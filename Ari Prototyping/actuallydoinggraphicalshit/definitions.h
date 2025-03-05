@@ -1,8 +1,8 @@
 
-#include <string.h>
+#include <string>
 #include <iostream>
 #include <fstream>
-#include <vector.h> 
+#include <vector> 
 
 struct Fish {
 	int x;
@@ -11,12 +11,13 @@ struct Fish {
 };
 
 struct Level {
-	int levelnum
+	int levelnum;
 	int height;
 	int width;
-	std::string issolid[height]
+	// std::string issolid[height];
+	std::vector<std::vector<int>> sprite;
 	int numfishes;
-	std::vector<fish> fishes;
+	std::vector<Fish> fishes;
 };
 
 
@@ -40,59 +41,64 @@ struct Level {
  * fishLightList
  */
 Level readmapfile(std::string filename){
-	ifstream levelfile(filename);
+	std::ifstream levelfile(filename);
 	
 	std::string line; 
-	Level level;
 
 	getline(levelfile, line);
 	int levelnum = std::stoi( line);
 	
 	getline(levelfile, line);
-	int height = std::stoi( line);
+	const int height = std::stoi( line);
 	getline(levelfile, line);
-	int width = std::stoi(line);
+	const int width = std::stoi(line);
 
-	std::string issolid[height];
-
+	//std::string issolid[height];
+	std::vector<std::vector<int>> issolid(height, std::vector<int>(width, 0));
+	std::vector<std::vector<int>> sprites(height, std::vector<int>(width,0));
 	for(int i =0; i<height;i++){
 		getline(levelfile,line);
-		issolid[i]=line;
+		//issolid[i]=line;
+		for(int x = 0;x<width;x++){
+			issolid[i][x] = std::stoi("" + line[x]);
+			sprites[i][x] = std::stoi("" + line[x]);
+		}			
+	}
+		
+
+	getline(levelfile, line);
+	const int numfishes =std::stoi(line);
+	std::vector<int> fishx;
+	std::vector<int> fishy;
+	std::vector<int> fishlight;
+
+	std::vector<Fish> fishes;
+
+
+
+	for(int i = 0;i<numfishes;i++){
+		
+		getline(levelfile,line,',');
+		fishx.push_back(std::stoi(line));
+	}
+	for(int i = 0;i<numfishes;i++){
+		
+		getline(levelfile,line,',');
+		fishy.push_back(std::stoi(line));
+	}
+	for(int i = 0;i<numfishes;i++){
+		
+		getline(levelfile,line,',');
+		fishlight.push_back(std::stoi(line));
+	}
 	
-	}
-
-	int numfishes;
-	int fishx[numfishes];
-	int fishy[numfishes];
-	int fishlight[numfishes];
-
-	std::vector<fish> fishes;
-
-
 
 	for(int i = 0;i<numfishes;i++){
-		
-		getline(levelfile,line,',');
-		fishx[i]=std::stoi(line);
-	}
-	for(int i = 0;i<numfishes;i++){
-		
-		getline(levelfile,line,',');
-		fishy[i]=std::stoi(line);
-	}
-	for(int i = 0;i<numfishes;i++){
-		
-		getline(levelfile,line,',');
-		fishlight[i]=std::stoi(line);
-	}
-	
-
-	for(int i = 0;i<numfishes;i++){
-		Fish fish = new fish{fishx[i],fishy[i],fishlight[i]};
-     		fishes.add(fish);
+		Fish fish = {fishx[i],fishy[i],fishlight[i]};
+     		fishes.push_back(fish);
 	}
 
 
-	level = {levelnum, height, width, issolid, numfishes, fishes};
+	Level level = {levelnum, height, width,sprites, numfishes, fishes};
 
 	return level;

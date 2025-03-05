@@ -8,6 +8,8 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
+                "-LC:\\include\\libs\\glfw3.lib",
+                "-Lopengl32.lib",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
