@@ -12,7 +12,7 @@ Ari(me, did basically all code)
 
 Madison (created maps)
 
-Sammy(created sprites I didnt have time to implement)
+Sammy(created sprites I didnt have time to implement but tried to)
 
 ==================================
 
