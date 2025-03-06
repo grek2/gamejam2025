@@ -15,7 +15,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 {
     renderingWindow win;
     
-    if (!win.Create("gamejam2025", WS_OVERLAPPEDWINDOW,0,CW_USEDEFAULT,0,336,336))
+    if (!win.Create("gamejam2025", WS_OVERLAPPEDWINDOW,0,CW_USEDEFAULT,0,768,768))
     {
         return 0;
     }

@@ -219,9 +219,9 @@ class renderingWindow : public BaseWindow<renderingWindow>{
             
             
                 
-            drawamap(level.sprites,1,4 - subxPos/16,4 - subyPos/16,subxPos,subyPos,pRenderTarget,pGreenBrush,pBlackBrush,pBlueBrush);
+            drawamap(level.sprites,1,3 - subxPos/16,3 - subyPos/16,subxPos,subyPos,pRenderTarget,pGreenBrush,pBlackBrush,pBlueBrush);
 
-            drawsub(Window(),pRenderTarget,48*4,48*4,direction,movesprite/2);
+            drawsub(Window(),pRenderTarget,48*3,48*3,direction,movesprite/2);
 
             hr = pRenderTarget->EndDraw();
             if (FAILED(hr) || hr == D2DERR_RECREATE_TARGET)
@@ -288,7 +288,7 @@ LRESULT renderingWindow::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
             // PostMessage(Window(),WM_USER+2,(WPARAM)(120),LPARAM(32));
             // levelmap.updatelevel(level);
             // levelmap.updatelevel(level);
-            levelTransition(0);
+            levelTransition(3);
             return 0;
         case WM_DESTROY:
             DiscardGraphicsResources();

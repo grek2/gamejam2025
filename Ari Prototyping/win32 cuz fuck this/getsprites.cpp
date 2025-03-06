@@ -320,7 +320,7 @@ D2D1_RECT_F blackrectangle;
 inline void drawsquare(ID2D1HwndRenderTarget *pRenderTarget,ID2D1SolidColorBrush *pBrush, int x, int y,int sizey = 3,int sizex=3){
     // printf("t");
     if(pBrush != NULL){
-        pRenderTarget->FillRectangle(D2D1::RectF(x,y,x+sizex,y+sizey), pBrush);
+        pRenderTarget->FillRectangle(D2D1::RectF(2*x,2*y,2*x+2*sizex,2*y+2*sizey), pBrush);
     }
 }
 
