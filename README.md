@@ -3,6 +3,7 @@ game stuff goes here
 
 
 to run, run vscode in the ariprototyping/win32 cuz fuck this/ folder and compile/debug/run main.cpp
+to play the other maps, change the number in line 291 of graphical.cpp to 0,1, or 2. i ran out of time to implement the actual level switching nor a win condition. so just like idk enjoy the scenery or smth idk
 
 ===================================
 
