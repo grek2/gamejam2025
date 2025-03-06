@@ -8,6 +8,8 @@ to play the other maps, change the number in line 291 of graphical.cpp to 0,1, o
 
 windows exclusive btw cuz fuck mac and linux they dont have win32 so they fucking suck lmao get owned mac users(and me whos a linux user i guess)(can you tell im incredibly sleep deprived from this fucking gamejam)(you organizers completely ruined my sleep schedule, tysm btw)
 
+you might notice i copied some if the zelda sprites cuz low on time.
+
 ===================================
 
 ppl who did anything material:
