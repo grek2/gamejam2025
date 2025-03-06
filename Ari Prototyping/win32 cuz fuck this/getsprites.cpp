@@ -470,7 +470,7 @@ void drawamap(std::vector<std::vector<int>> map,int type, double offsetx,double 
                             break;
                         }
                     }
-                    double distance = (squarex+j/16-subx/16)*(squarex+j/16-subx/16)+(squarey+i1/16-suby/16)*(squarey+i1/16-suby/16);
+                    double distance = ((double)squarex+(double)j/16.0-(double)subx/16)*((double)squarex+(double)j/16.0-(double)subx/16.0)+((double)squarey+(double)i1/16.0-(double)suby/16.0)*((double)squarey+(double)i1/16.0-(double)suby/16.0);
                     double light = (3-sqrt(distance))/2;
                     light = light>0 ? light :0;
                     const D2D1_COLOR_F green = D2D1::ColorF(13.0*light/256,146.0*light/256,99.0*light/256);
