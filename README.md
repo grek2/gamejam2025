@@ -22,7 +22,7 @@ Sammy(created sprites I didnt have time to implement but tried to)
 
 moral support provided by:
 
-Will(who did make music but i did not whatsoever implement it or even begin trying)
+Will(who did make music but i did not whatsoever implement it or even begin trying, cuz not enough time)
 
 Kate(who provided moral support and some ideas)
 
