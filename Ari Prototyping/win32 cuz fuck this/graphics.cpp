@@ -14,7 +14,7 @@
 #define UPDATE WM_USER+2
 
 
-const char *levelmapfilepaths[4] = {"Maps\\stone.txt","","","Maps\\3.txt"};
+const char *levelmapfilepaths[4] = {"Maps\\0.txt","Maps\\3.txt","Maps\\2.txt","Maps\\3.txt"};
 
 template <class T> void SafeRelease(T **ppT)
 {
@@ -213,13 +213,13 @@ class renderingWindow : public BaseWindow<renderingWindow>{
             BeginPaint(m_hwnd, &ps);
         
             pRenderTarget->BeginDraw();
-            const D2D1_COLOR_F backgroundcolor = D2D1::ColorF(247.0/255.0,216.0/255.0,165.0/255.0);  
+            const D2D1_COLOR_F backgroundcolor = D2D1::ColorF(0.0,0.0,0.0);  
             pRenderTarget->Clear(backgroundcolor);
             // pRenderTarget->FillRectangle(greenrectangle, pBrush);
             
             
                 
-            drawamap(level.sprites,1,4 - subxPos/16,4 - subyPos/16,pRenderTarget,pGreenBrush,pBlackBrush,pBlueBrush);
+            drawamap(level.sprites,1,4 - subxPos/16,4 - subyPos/16,subxPos,subyPos,pRenderTarget,pGreenBrush,pBlackBrush,pBlueBrush);
 
             drawsub(Window(),pRenderTarget,48*4,48*4,direction,movesprite/2);
 
@@ -268,6 +268,7 @@ public:
 
 };
 void renderingWindow::levelTransition(int newnum){
+    levelnum = newnum;
     level = readmapfile(levelmapfilepaths[levelnum]);
     subxPos = level.startx*16;
     subyPos = level.starty*16;

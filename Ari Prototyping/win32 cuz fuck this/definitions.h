@@ -60,6 +60,10 @@ Level readmapfile(std::string filename){
 	const int startx = std::stoi( line);
 	getline(levelfile, line);
 	const int starty = std::stoi(line);
+    getline(levelfile, line);
+	const int keyy = std::stoi( line);
+	getline(levelfile, line);
+	const int keyx = std::stoi(line);
 	//std::string issolid[height];
 	std::vector<std::vector<int>> issolid(height, std::vector<int>(width, 0));
 	std::vector<std::vector<int>> sprites(height, std::vector<int>(width,0));

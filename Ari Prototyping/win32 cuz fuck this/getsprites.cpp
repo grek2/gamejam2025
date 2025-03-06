@@ -1,6 +1,7 @@
 #include <windows.h> 
 #include <d2d1.h>
 #include "mapfunctions.h"
+#include <math.h>
 // #include <stdio.h>
 #pragma comment(lib, "d2d1.lib")
 // int stonemap[] = {1,2,3,4,5,6,7,10,11,12,13,14,15,16,17,18,19,20,22,26,27,28,29,30,31,32,33,34,35,42,43,44,45,46,47,48,49,50,58,59,60,61,62,63,64,65,75,76,77,78,79,80,97,98,111,112,113,114,127,128,129,130,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176};
@@ -323,7 +324,7 @@ inline void drawsquare(ID2D1HwndRenderTarget *pRenderTarget,ID2D1SolidColorBrush
     }
 }
 
-void drawamap(std::vector<std::vector<int>> map,int type, double offsetx,double offsety,ID2D1HwndRenderTarget   *pRenderTarget, ID2D1SolidColorBrush *pBrush1,ID2D1SolidColorBrush *pBrush2,ID2D1SolidColorBrush *pBrush3=NULL){
+void drawamap(std::vector<std::vector<int>> map,int type, double offsetx,double offsety,double subx, double suby,ID2D1HwndRenderTarget   *pRenderTarget, ID2D1SolidColorBrush *pBrush1,ID2D1SolidColorBrush *pBrush2,ID2D1SolidColorBrush *pBrush3=NULL){
     int (*Sprite)[16];
     switch(type){
         case(0):
@@ -460,6 +461,7 @@ void drawamap(std::vector<std::vector<int>> map,int type, double offsetx,double 
             if (x<-48||x>48*8||map[squarey][squarex]!=type) continue;
             for(int i1 = 0;i1<16;i1++){
                 for(int j = 0;j<16;j++){
+                    
                     int size = 1;
                     for(int test = j+1;test<16;test++){
                         if (Sprite[i1][test]==Sprite[i1][j]){
@@ -468,8 +470,15 @@ void drawamap(std::vector<std::vector<int>> map,int type, double offsetx,double 
                             break;
                         }
                     }
+                    double distance = (squarex+j/16-subx/16)*(squarex+j/16-subx/16)+(squarey+i1/16-suby/16)*(squarey+i1/16-suby/16);
+                    double light = (3-sqrt(distance))/2;
+                    light = light>0 ? light :0;
+                    const D2D1_COLOR_F green = D2D1::ColorF(13.0*light/256,146.0*light/256,99.0*light/256);
+                    
+                    pRenderTarget->CreateSolidColorBrush(green, &pBrush1);
                     switch(Sprite[i1][j]){
                         case(1):
+                            
                             drawsquare(pRenderTarget,pBrush1,3*j+x,3*i1+y,3,3*size);
                             break;
                         case(2):
