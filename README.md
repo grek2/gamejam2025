@@ -1,2 +1,2 @@
 # gamejam2025
-I will try to do things and probably not succeed --Madison
+When I'm bored I might try to do things here --Madison
