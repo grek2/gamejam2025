@@ -1,2 +1,2 @@
 # gamejam2025
-When I'm bored I might try to do things here --Madison
+i think i updated the wall sprite but idk if it worked because my computer does not want to run the code. --Madison
