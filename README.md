@@ -1,6 +1,10 @@
 # gamejam2025
 game stuff goes here
 
+UPDATE 7/11/25 - I made my own game loosely based off of what this one was supposed to be.
+https://github.com/grek2/OceanGameRaylib
+It's still unfinished but it's playable and I didn't use WIN32 FOR THE GRAPHICS so people who aren't Ari might be able to understand it.
+-Madison
 
 to run, run vscode in the ariprototyping/win32 cuz fuck this/ folder and compile/debug/run main.cpp
 
